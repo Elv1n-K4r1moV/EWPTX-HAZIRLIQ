@@ -102,6 +102,12 @@ Sonra istifadəçi başqa saytda belə link görür:
 
 Brauzer SESSION=abc123 cookie‑sini bank.com‑a göndərir. Server istifadəçini login olmuş hesab edir. Pul köçürülür. Bu CSRF hücumudur.
 
+*Əgər SameSite varsa*
+
+Request başqa saytdan gəldiyi üçün brauzer cookie‑ni göndərmir.Əməliyyat icra olunmur ❌
+
+*VACİB*: HttpOnly və SameSite request‑də görünməz, yalnız serverin Set‑Cookie response‑unda olur və brauzer bu qaydaları səssizcə tətbiq edir.
+
 *Qısaca*: HttpOnly cookie-nin yalnız HTTP request-lərdə istifadə olunmasını (JS-dən gizlədilməsini), SameSite isə onun hansı HTTP request-lərə əlavə olunacağını müəyyən edir.
 
 ## Secure
@@ -121,8 +127,3 @@ Cookie yalnız müəyyən URL path-lərdə göndərilir
 Set-Cookie: SESSION=abc123; Path=/admin
 ```
 
-*Əgər SameSite varsa*
-
-Request başqa saytdan gəldiyi üçün brauzer cookie‑ni göndərmir.Əməliyyat icra olunmur ❌
-
-*VACİB*: HttpOnly və SameSite request‑də görünməz, yalnız serverin Set‑Cookie response‑unda olur və brauzer bu qaydaları səssizcə tətbiq edir.
