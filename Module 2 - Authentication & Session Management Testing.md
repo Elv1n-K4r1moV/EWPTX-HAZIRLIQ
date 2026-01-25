@@ -92,5 +92,7 @@ Sonra istifadəçi başqa saytda belə link görür:
   Endirim üçün klik et
 </a>
 ```
-
+<a href="https://bank.com/transfer?to=attacker&amount=1000">
+  Endirim üçün klik et
+</a>
 İstifadəçi klikləyir ✅
