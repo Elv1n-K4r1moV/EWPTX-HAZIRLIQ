@@ -24,3 +24,16 @@
 Yəni,
 
 İstifadəçi uğurla login olduqda, server server‑side session yaradır, bu session üçün unikal və təsadüfi SessionID generasiya edir, session məlumatlarını (user_id, auth=true, role, expiry və s.) server‑də saxlayır və yalnız həmin SessionID‑ni cookie kimi brauzerə göndərir; brauzer bu cookie‑ni saxlayır və sonrakı hər HTTP request‑də avtomatik göndərdiyi üçün server SessionID‑yə əsasən istifadəçini tanıyır və yenidən login tələb etmir.
+
+#### HTTP-ONLY
+**HttpOnly** – cookie atributudur; brauzerin JavaScript vasitəsilə həmin cookieni oxumasına mane olur, yalnız HTTP sorğularında (serverə göndərilərkən) istifadə olunur, bu da XSS hücumlarından cookie oğurlanmasının qarşısını alır.
+
+Tutaq ki, sənin brauzerində session cookie var.Əgər HttpOnly YOXDURSA, saytda olan bir JavaScript bunu oxuya bilər:
+document.cookie
+→ hücumçu XSS ilə sessiyanı oğurlayar.
+
+Əgər HttpOnly VARSA, JavaScript heç cür bu cookieni görə bilməz ❌
+amma brauzer yenə də onu serverə avtomatik göndərir ✅
+
+Qısa məntiq:
+HttpOnly = cookie yalnız server üçündür, JS üçün qadağandır.
