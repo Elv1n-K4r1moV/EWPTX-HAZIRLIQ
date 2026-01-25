@@ -14,3 +14,5 @@
 7) *SSO* – İş sisteminə bir dəfə login olub e-mail, HR və daxili portalı ayrıca girişsiz açırsan.
 
 <img width="798" height="572" alt="image" src="https://github.com/user-attachments/assets/e758417b-6823-42ea-b4e9-6e78bd0c8246" />
+
+#### CVE‑2020‑15906 – Tiki Wiki CMS‑də admin hesabı çox yalnış loginlə kilidləndikdən sonra boş şifrə ilə autentifikasiyanın ötürülməsinə imkan verən auth bypass zəifliyidir.
