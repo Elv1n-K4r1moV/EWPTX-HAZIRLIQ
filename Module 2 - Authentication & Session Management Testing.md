@@ -36,5 +36,5 @@ document.cookie
 
 amma brauzer yenə də onu serverə avtomatik göndərir ✅
 
-Qısa məntiq:
+**Qısaca desək:**
 HttpOnly = cookie yalnız server üçündür, JS üçün qadağandır.
