@@ -96,3 +96,12 @@ Sonra istifadəçi başqa saytda belə link görür:
   Endirim üçün klik et
 </a>
 İstifadəçi klikləyir ✅
+
+*Əgər SameSite YOXDURSA*
+
+Brauzer SESSION=abc123 cookie‑sini bank.com‑a göndərir. Server istifadəçini login olmuş hesab edir. Pul köçürülür. Bu CSRF hücumudur.
+
+*Əgər SameSite varsa*
+
+Request başqa saytdan gəldiyi üçün brauzer cookie‑ni göndərmir.Əməliyyat icra olunmur ❌
+
