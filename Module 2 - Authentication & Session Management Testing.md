@@ -61,3 +61,12 @@ Hücumçu cookie-ni oğurlaya bilmir
 Session təhlükəsiz qalır
 Cookie hücumçuya gedir
 Hücumçu session hijacking edir → login olmadan daxil olur
+
+**DİQQƏT**: HttpOnly XSS-i bloklamır. Amma session oğurluğunu bloklayır
+
+**Simulyasiya:**
+HTTP = poçtalyon
+
+JS = evin içindəki uşaq
+
+HttpOnly = “poçtu poçtalyon versin, uşağa yox”
