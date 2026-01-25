@@ -106,3 +106,4 @@ Brauzer SESSION=abc123 cookie‑sini bank.com‑a göndərir. Server istifadəç
 
 Request başqa saytdan gəldiyi üçün brauzer cookie‑ni göndərmir.Əməliyyat icra olunmur ❌
 
+*VACİB*: HttpOnly və SameSite request‑də görünməz, yalnız serverin Set‑Cookie response‑unda olur və brauzer bu qaydaları səssizcə tətbiq edir.
