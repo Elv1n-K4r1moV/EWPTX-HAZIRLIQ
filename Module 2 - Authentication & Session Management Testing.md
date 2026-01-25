@@ -33,6 +33,7 @@ document.cookie
 → hücumçu XSS ilə sessiyanı oğurlayar.
 
 Əgər HttpOnly VARSA, JavaScript heç cür bu cookieni görə bilməz ❌
+
 amma brauzer yenə də onu serverə avtomatik göndərir ✅
 
 Qısa məntiq:
