@@ -104,6 +104,23 @@ Brauzer SESSION=abc123 cookie‑sini bank.com‑a göndərir. Server istifadəç
 
 *Qısaca*: HttpOnly cookie-nin yalnız HTTP request-lərdə istifadə olunmasını (JS-dən gizlədilməsini), SameSite isə onun hansı HTTP request-lərə əlavə olunacağını müəyyən edir.
 
+## Secure
+
+Cookie yalnız HTTPS üzərindən göndərilir
+
+HTTP-də GETMİR ❌
+```
+Set-Cookie: SESSION=abc123; Secure
+```
+
+## Path
+
+Cookie yalnız müəyyən URL path-lərdə göndərilir
+
+```
+Set-Cookie: SESSION=abc123; Path=/admin
+```
+
 *Əgər SameSite varsa*
 
 Request başqa saytdan gəldiyi üçün brauzer cookie‑ni göndərmir.Əməliyyat icra olunmur ❌
