@@ -133,6 +133,8 @@ Cookie tampering testi serverin session və səlahiyyətləri server-side yox, c
 
 #### OPTIONS request — HTTP metodudur və serverdən soruşur: “Bu endpoint hansı HTTP metodlarını və qaydaları dəstəkləyir?”
 
+OPTIONS = “Bu endpointə nə edə bilərəm?” sorğusudur.
+
 ### Session Fixation 
 
 Hücumçunun əvvəlcədən təyin etdiyi session ID ilə istifadəçini login etdirməsi və həmin ID dəyişmədiyi üçün sonradan onun sessiyasını ələ keçirməsidir.
@@ -141,4 +143,3 @@ Session fixation üçün istifadəçi hücumdan ƏVVƏL login olmamış olmalıd
 
 Müasir dövrdə bu hücumun həyata keçirilməsi demək olar ki, mümkün deyil. Çünki, serverlər ümumiyyətlə istifadəçini login etmədən əvvəl və sonra sessiya ID-lərini dəyişdirir
 
-OPTIONS = “Bu endpointə nə edə bilərəm?” sorğusudur.
