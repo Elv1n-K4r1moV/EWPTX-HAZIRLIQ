@@ -130,3 +130,7 @@ Set-Cookie: SESSION=abc123; Path=/admin
 ## Cookie tampering 
 
 Cookie tampering testi serverin session və səlahiyyətləri server-side yox, client-side cookie-yə əsasən idarə edib-etmədiyini aşkar edir. Pentester brauzerdən/serverdən gələn cookie-ləri (məs: role=user, LoggedIn=false, user_id=12) əl ilə dəyişir və serverin bunu yenidən yoxlayıb-yoxlamadığını test edir.
+
+### OPTIONS request — HTTP metodudur və serverdən soruşur: “Bu endpoint hansı HTTP metodlarını və qaydaları dəstəkləyir?”
+
+OPTIONS = “Bu endpointə nə edə bilərəm?” sorğusudur.
