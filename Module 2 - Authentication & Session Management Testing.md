@@ -17,4 +17,4 @@
 
 #### CVE‑2020‑15906 – Tiki Wiki CMS‑də admin hesabı çox yalnış loginlə kilidləndikdən sonra boş şifrə ilə autentifikasiyanın ötürülməsinə imkan verən auth bypass zəifliyidir.
 
-### https://www.exploit-db.com/exploits/39167 - Bu exploitdə auth bypass ona görə baş verir ki, tətbiq login olub‑olmadığını server‑side yoxlamaq əvəzinə yalnız $_COOKIE['LoggedIn'] dəyişəninə inanır; hücumçu request‑ə Cookie: LoggedIn=yes əlavə etməklə heç bir username/password olmadan admin panelə daxil olur.
+#### https://www.exploit-db.com/exploits/39167 - Bu exploitdə auth bypass ona görə baş verir ki, tətbiq login olub‑olmadığını server‑side yoxlamaq əvəzinə yalnız $_COOKIE['LoggedIn'] dəyişəninə inanır; hücumçu request‑ə Cookie: LoggedIn=yes əlavə etməklə heç bir username/password olmadan admin panelə daxil olur.
