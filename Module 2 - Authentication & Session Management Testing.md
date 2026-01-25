@@ -71,3 +71,25 @@ HTTP = poçtalyon
 JS = evin içindəki uşaq
 
 HttpOnly = “poçtu poçtalyon versin, uşağa yox”
+
+### SameSite
+
+SameSite cookie atributudur və brauzerə deyir ki, bu cookie hansı hallarda HTTP request‑ə əlavə olunsun. Brauzer cookie‑ləri avtomatik göndərir.
+Əgər istifadəçi bir sayta login olubsa, başqa sayt həmin istifadəçinin brauzeri vasitəsilə həmin sayta request göndərə bilər.
+
+**Ssenari**
+
+İstifadəçi bank.com‑da login olub
+Brauzerdə session cookie var
+
+```Cookie: SESSION=abc123```
+
+
+Sonra istifadəçi başqa saytda belə link görür:
+
+<a href="https://bank.com/transfer?to=attacker&amount=1000">
+  Endirim üçün klik et
+</a>
+
+
+İstifadəçi klikləyir ✅
