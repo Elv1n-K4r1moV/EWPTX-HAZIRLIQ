@@ -65,6 +65,7 @@ Hücumçu session hijacking edir → login olmadan daxil olur
 **DİQQƏT**: HttpOnly XSS-i bloklamır. Amma session oğurluğunu bloklayır
 
 **Simulyasiya:**
+
 HTTP = poçtalyon
 
 JS = evin içindəki uşaq
