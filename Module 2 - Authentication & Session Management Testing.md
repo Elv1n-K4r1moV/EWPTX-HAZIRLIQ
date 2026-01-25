@@ -1,0 +1,14 @@
+### AUTH Tipləri:
+1) *Password-based* – Universitet portalına hər dəfə username və şifrə yazaraq daxil olursan.
+
+2) *MFA* – Bank hesabına girişdə şifrəni yazırsan, sonra telefonuna gələn SMS kodu təsdiqləyirsən.
+
+3) *Token-based* – Mobil tətbiqdə login edirsən, server sənə token verir və tətbiq hər sorğuda onu göndərir.
+
+4) *Session-based* – Onlayn mağazaya login olandan sonra səhifələri dəyişsən də çıxış olmursan.
+
+5) *Certificate-based* – İş yerinin daxili şəbəkəsinə yalnız sənə verilmiş sertifikatla qoşula bilirsən.
+
+6) *Biometric* – Telefon kilidini üz tanıma ilə açırsan.
+
+7) *SSO* – İş sisteminə bir dəfə login olub e-mail, HR və daxili portalı ayrıca girişsiz açırsan.
