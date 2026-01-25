@@ -4,7 +4,7 @@ Bir forum saytında şərh hissəsi var və input filtrasiya olunmur. Hücumçu 
 
 Hücumçu həmin cookie ilə sənin hesabına şifrəsiz daxil olur (session hijacking).
 
-Qarşısı (qısa):
+## Qarşısının alınması:
 
 Input validation + output encoding
 
