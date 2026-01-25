@@ -12,3 +12,5 @@
 6) *Biometric* – Telefon kilidini üz tanıma ilə açırsan.
 
 7) *SSO* – İş sisteminə bir dəfə login olub e-mail, HR və daxili portalı ayrıca girişsiz açırsan.
+8) 
+<img width="898" height="772" alt="image" src="https://github.com/user-attachments/assets/e758417b-6823-42ea-b4e9-6e78bd0c8246" />
