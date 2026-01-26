@@ -169,9 +169,10 @@ password: tarzan
 Nəticə
 
 ✔️ Joe Jane-in hesabına parolsuz daxil olur
+
 ❌ Səbəb: Session ID URL-dədir və login zamanı dəyişdirilmir
 
-Netice olaraq: Session ID heç vaxt URL-də olmamalı və login zamanı yenilənməlidir.
+Netice olaraq:Session ID heç vaxt URL-də olmamalı və login zamanı yenilənməlidir.
 
 Müasir dövrdə bu hücumun həyata keçirilməsi demək olar ki, mümkün deyil. Çünki, serverlər ümumiyyətlə istifadəçini login etmədən əvvəl və sonra sessiya ID-lərini dəyişdirir
 
