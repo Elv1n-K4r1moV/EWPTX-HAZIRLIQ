@@ -135,11 +135,43 @@ Cookie tampering testi serverin session və səlahiyyətləri server-side yox, c
 
 OPTIONS = “Bu endpointə nə edə bilərəm?” sorğusudur.
 
-### Session Fixation 
+## Session Fixation 
 
 Hücumçunun əvvəlcədən təyin etdiyi session ID ilə istifadəçini login etdirməsi və həmin ID dəyişmədiyi üçün sonradan onun sessiyasını ələ keçirməsidir.
 
 Session fixation üçün istifadəçi hücumdan ƏVVƏL login olmamış olmalıdır ki, hücumçu əvvəlcədən verdiyi session ID login zamanı dəyişdirilməsin.
+
+Session Fixation hucum simulyasiyasi:
+
+1️⃣ Hücumçu (Joe) əvvəlcədən bir Session ID seçir
+
+``` SID=1000 ```
+
+2️⃣ Joe qurbana (Jane) saxta bank emaili göndərir və linkə SID əlavə edir
+
+``` https://bank.com/login?SID=1000 ```
+
+
+3️⃣ Jane linkə klikləyir və login olur
+```
+username: jane
+password: tarzan
+```
+
+➡️ Server yeni session yaratmır, köhnə SID=1000 qalır
+
+4️⃣ Joe eyni SID ilə sayta girir
+
+``` https://bank.com/account?SID=1000 ```
+
+5️⃣ 🎯 Server Joe-nu Jane kimi tanıyır
+
+Nəticə
+
+✔️ Joe Jane-in hesabına parolsuz daxil olur
+❌ Səbəb: Session ID URL-dədir və login zamanı dəyişdirilmir
+
+Netice olaraq: Session ID heç vaxt URL-də olmamalı və login zamanı yenilənməlidir.
 
 Müasir dövrdə bu hücumun həyata keçirilməsi demək olar ki, mümkün deyil. Çünki, serverlər ümumiyyətlə istifadəçini login etmədən əvvəl və sonra sessiya ID-lərini dəyişdirir
 
