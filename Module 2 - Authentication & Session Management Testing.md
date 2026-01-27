@@ -142,6 +142,8 @@ OPTIONS = “Bu endpointə nə edə bilərəm?” sorğusudur.
 
 ## Session Fixation 
 
+<img width="381" height="440" alt="image" src="https://github.com/user-attachments/assets/894c5da4-a012-4b92-bb3c-23ed1daad92f" />
+
 Hücumçunun əvvəlcədən təyin etdiyi session ID ilə istifadəçini login etdirməsi və həmin ID dəyişmədiyi üçün sonradan onun sessiyasını ələ keçirməsidir.
 
 Session fixation üçün istifadəçi hücumdan ƏVVƏL login olmamış olmalıdır ki, hücumçu əvvəlcədən verdiyi session ID login zamanı dəyişdirilməsin.
