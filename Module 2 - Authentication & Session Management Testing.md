@@ -256,7 +256,7 @@ Bəli → əməliyyat icra olunur
 
 Xeyr → 403 Forbidden
 
-Brauzer üçün identifikasiya üsulları:
+#### Brauzer üçün identifikasiya üsulları:
 
 Cookie – məsələn, session_id və ya JWT saxlayan cookie
 VƏ YA
