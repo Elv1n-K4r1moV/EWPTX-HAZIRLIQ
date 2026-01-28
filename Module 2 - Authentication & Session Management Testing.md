@@ -256,4 +256,4 @@ Bəli → əməliyyat icra olunur
 
 Xeyr → 403 Forbidden
 
-Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌
+Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌ DB-de saxlanilir
