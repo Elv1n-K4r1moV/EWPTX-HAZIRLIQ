@@ -183,3 +183,19 @@ Netice olaraq:Session ID heç vaxt URL-də olmamalı və login zamanı yenilənm
 
 Müasir dövrdə bu hücumun həyata keçirilməsi demək olar ki, mümkün deyil. Çünki, serverlər ümumiyyətlə istifadəçini login etmədən əvvəl və sonra sessiya ID-lərini dəyişdirir
 
+
+#### Bearer Authentication - Server yalnız tokenin özünü yoxlayır. Request-i göndərən tərəfin tokeni sahiblənməsini ayrıca sübut etməsi tələb olunmur. Yeni bu tokeni gonderdikde yoxlamirki kim gonderib sadece tokenin serverde valid olub-olmamasini yoxlayir. Yəni auth qərarı belə verilir:
+
+IF token is valid
+
+   THEN allow request
+   
+❌ IP
+
+❌ Device
+
+❌ Extra cryptographic proof yoxdur.
+
+#### CSRF token — login sonrası server tərəfindən yaradılan, session‑a bağlı unikal dəyərdir və POST/PUT/DELETE request-lərdə server tərəfindən yoxlanır, uyğun deyilsə request rədd olunur. Yəni sayt bilsin ki, əməliyyatı sən öz brauzerindən icra etmisən, kimsə gizlicə sənin adından göndərə bilməz. Ssenari:
+
+Login olursan → server unikal session yaradır və session-a bağlı CSRF token təyin edir → hər POST/PUT/DELETE request-də client tokeni göndərir → server tokeni session-dakı token ilə müqayisə edir → uyğun deyilsə request rədd olunur.
