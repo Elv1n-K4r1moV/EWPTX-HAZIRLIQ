@@ -256,4 +256,12 @@ Bəli → əməliyyat icra olunur
 
 Xeyr → 403 Forbidden
 
+Brauzer üçün identifikasiya üsulları:
+
+Cookie – məsələn, session_id və ya JWT saxlayan cookie
+VƏ YA
+
+Authorization header – Bearer <JWT>
+
+⚠️ 3‑cü bir üsul yoxdur.
 Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌ DB-de saxlanilir
