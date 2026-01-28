@@ -202,3 +202,57 @@ IF token is valid
 #### CSRF token — login sonrası server tərəfindən yaradılan, session‑a bağlı unikal dəyərdir və POST/PUT/DELETE request-lərdə server tərəfindən yoxlanır, uyğun deyilsə request rədd olunur. Yəni sayt bilsin ki, əməliyyatı sən öz brauzerindən icra etmisən, kimsə gizlicə sənin adından göndərə bilməz. Ssenari:
 
 Login olursan → server unikal session yaradır və session-a bağlı CSRF token təyin edir → hər POST/PUT/DELETE request-də client tokeni göndərir → server tokeni session-dakı token ilə müqayisə edir → uyğun deyilsə request rədd olunur.
+
+Ssenari: qeydiyyat + login → session + CSRF
+
+Sən saytda qeydiyyatdan keçirsən / login olursan
+
+```
+Username: user
+
+Password: user123
+```
+
+Server səni təsdiqləyir Server session yaradır (məsələn session_id = SESS123). Server öz yaddaşında belə saxlayır:
+
+```
+session_id: SESS123
+------------------
+user_id: 15
+username: user
+balance: 200 USD
+csrf_token: CSRF456
+session_exp: 30 dəqiqə
+```
+
+Server brauzerinə 2 şey göndərir
+
+```
+Cookie:
+
+Set-Cookie: session_id=SESS123; HttpOnly; Secure
+```
+
+CSRF token (HTML içində və ya meta tag-da):
+
+```
+<input type="hidden" name="csrf" value="CSRF456">
+```
+
+Sən əməliyyat edirsən (məsələn pul göndərmək)  Brauzer avtomatik cookie-ni göndərir:
+
+```
+Cookie: session_id=SESS123
+```
+
+Frontend CSRF tokeni də əlavə edir:
+
+```
+csrf=CSRF456
+```
+
+Server yoxlayır, session_id ilə session-u tapır  ,Göndərilən csrf token == session-dakı csrf_token ?
+
+Bəli → əməliyyat icra olunur
+
+Xeyr → 403 Forbidden
