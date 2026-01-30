@@ -265,3 +265,5 @@ Authorization header – Bearer <JWT>
 
 ⚠️ 3‑cü bir üsul yoxdur.
 Yadda saxlamaq vacibdir ki, Şifrə session-da saxlanılmır ❌ DB-de saxlanilir
+
+
